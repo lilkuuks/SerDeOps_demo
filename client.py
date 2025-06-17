@@ -8,7 +8,7 @@ def main():
     client_socket.connect(('127.0.0.1', 9999))
 
     #creation and serialise of data
-    data = {"name": "<NAME>", "age": 23}
+    data = {"name": "Alice", "age": 23}
     print("Serialisation of Data")
     time.sleep(2)
     serialized_data = json.dumps(data).encode()
